@@ -57,13 +57,14 @@
         "https://www.instagram.com/lapzone"
       ]
     }
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = "https://ojqlwvducojhpypfbwev.supabase.co";
   const SUPABASE_ANON_KEY = "sb_publishable_ZwJx3a8WsH6xiFZPm4oycA_nnoiKIYb";
 
-  const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-  console.log("Supabase loaded:", !!supabaseClient);
+   window.sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 </script>
 <style>
     /* =========================
